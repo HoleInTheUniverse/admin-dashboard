@@ -9,13 +9,33 @@
     grid-template-columns: 150px 1fr;
 }
 
+/* Sidebar styles */
+
 .sidebar {
     grid-row: 1 / 3;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 16px;
 }
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+}
+
+.section {
+    margin-bottom: 64px;
+}
+
+/* Header styles */
 
 .header {
     grid-column: 2 / 3;
 }
+
+/* Main content styles */
 
 .main {
     grid-row: 2 / 3;
