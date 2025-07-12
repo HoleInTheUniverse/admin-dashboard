@@ -1,7 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --background-color: #121212;
+    --primary-text: #E0E0E0;
+    --secondary-text: #B0B0B0;
+    --border-color: #444444;
+    --accent-color: #888888;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+
+    font-family: Roboto, Arial, Helvetica, sans-serif;
 }
 
 ul {
@@ -11,6 +23,8 @@ ul {
 .container {
     display: grid;
     grid-template-columns: 250px 1fr;
+
+    height: 100vh;
 }
 
 /* Sidebar styles */
@@ -22,6 +36,10 @@ ul {
     flex-direction: column;
 
     padding: 16px;
+
+    font-weight: bold;
+    background-color: var(--background-color);
+    color: var(--primary-text);
 }
 
 .navbar {
@@ -29,6 +47,7 @@ ul {
     flex-direction: column;
 
     font-size: 1.2rem;
+    padding: 8px;
 }
 
 .section {
@@ -75,4 +94,32 @@ ul {
 
 .trending {
     grid-column: 2 / 3;
+}
+
+/* Miscellaneous */
+
+.icon {
+    height: 24px;
+    width: 24px;
+
+    fill: var(--primary-text);
+    stroke: var(--accent-color);
+}
+
+li, .logo {
+    display: flex;
+    align-items: center;
+}
+
+li {
+    gap: 24px;
+}
+
+.logo {
+    gap: 8px;
+}
+
+.logo .icon {
+    height: 40px;
+    width: 40px;
 }
