@@ -154,6 +154,13 @@ ul {
     display: grid;
     grid-template-columns: 3fr 1fr;
     gap: 12px;
+
+    color: var(--primary-text);
+    padding: 16px;
+}
+
+.main h2 {
+    margin-bottom: 24px;
 }
 
 .projects {
@@ -166,6 +173,25 @@ ul {
 
 .trending {
     grid-column: 2 / 3;
+}
+
+.projects-block {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(425px, 1fr));
+    gap: 12px;
+}
+
+.card {
+    height: 200px;
+
+    background-color: var(--accent-color);
+    border-radius: 10px;
+
+    padding: 24px;
+}
+
+.border {
+    border-left: 10px solid var(--border-color);
 }
 
 /* Miscellaneous */
