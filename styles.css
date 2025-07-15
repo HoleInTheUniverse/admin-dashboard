@@ -92,7 +92,7 @@ ul {
 
 .searchbar {
     display: flex;
-    gap: 8px;
+    gap: 12px;
 }
 
 .searchbar input {
@@ -101,6 +101,18 @@ ul {
     border-radius: 15px;
     background-color: var(--accent-color);
     border: none;
+}
+
+.profile {
+    display: flex;
+    gap: 32px;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 48px;
+}
+
+.profile .user-name {
+    font-size: 1.2rem;
 }
 
 /* Main content styles */
@@ -131,6 +143,14 @@ ul {
 .icon {
     height: 24px;
     width: 24px;
+
+    fill: var(--primary-text);
+    stroke: var(--accent-color);
+}
+
+.pfp {
+    height: 48px;
+    width: 48px;
 
     fill: var(--primary-text);
     stroke: var(--accent-color);
