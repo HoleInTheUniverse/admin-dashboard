@@ -130,6 +130,21 @@ ul {
     font-size: 2rem;
 }
 
+.project {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.project input {
+    border: none;
+    border-radius: 25px;
+    height: 40px;
+    width: 120px;
+    background-color: var(--accent-color);
+    color: var(--primary-text);
+    font-size: 1.2rem;
+}
+
 /* Main content styles */
 
 .main {
