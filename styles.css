@@ -115,6 +115,21 @@ ul {
     font-size: 1.2rem;
 }
 
+.greeting {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.greeting .pfp {
+    height: 64px;
+    width: 64px;
+}
+
+.greeting .user-name, .greeting .user-tag {
+    font-size: 2rem;
+}
+
 /* Main content styles */
 
 .main {
