@@ -194,6 +194,30 @@ ul {
     border-left: 10px solid var(--border-color);
 }
 
+.announcements, .trending {
+    display: flex;
+    flex-direction: column;
+}
+
+.announcements-block, .trending-block {
+    flex: 1;
+}
+
+.announcements-block .card, .trending-block .card {
+    height: 100%;
+}
+
+.announcements-block .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.announcements-block .card hr {
+    margin: 8px 0;
+    border: 1px solid var(--border-color);
+}
+
 /* Miscellaneous */
 
 .icon {
